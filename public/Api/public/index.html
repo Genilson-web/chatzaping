@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <title>ChatZaping QR Code</title>
+</head>
+
+<body>
+    <br>
+    <h2 align="center" >Aguarde o QR Code ser gerado</h2>
+    <div align="center" id="qrcode" style="margin-top: 30px;">
+        <canvas id="canvas" width="5" height="5"></canvas>
+    </div>
+    <div align="center" id="auth" style="margin-top: 30px;">
+        <h2 id="aguarde" style="color: blue;"></h2>
+    </div>
+    <div align="center" id="auth" style="margin-top: 30px;">
+        <h2 id="h2" style="color: rgb(1, 207, 8);"></h2>
+    </div>
+
+    <!-- <canvas id="canvas" width="5" height="5"></canvas> -->
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/master/qrcode.js"></script>
+    <script>
+
+        const myTimeout = setTimeout(abrir, 6000);
+        function abrir() {
+            window.location.reload(1);
+        }
+
+        var socket = io();
+
+        var canvas = document.getElementById('canvas');
+        // var dataURL = canvas.toDataURL();
+        // socket.on('falha', function (msg) {
+        //     console.log('falha = '+msg);
+        // });
+
+        socket.on('event', function (msg) {
+            console.log('qrcode = '+msg);
+            var QRId = msg.padEnd(220)
+            var qrcode = new QRCode("qrcode", {
+                text: QRId,
+                width: 300,
+                height: 300,
+                colorDark: "#000000",
+                colorLight: "#ffffff",
+                correctLevel: QRCode.CorrectLevel.H
+            });
+
+            var canvas = document.getElementById('qrcode').querySelector('canvas');
+            var dataURL = canvas.toDataURL();
+            const aguarde = document.getElementById('aguarde');
+            aguarde.textContent = 'Aguarde a Autenticação do Usuário!';
+
+        });
+        // FUNÇÃO PARA ESCONDER O QRCODE APÓS USUÁRIO AUTENTICAR
+        socket.on('ativar', (message) => {
+            if (message === 'auth') {
+                const remove = document.getElementById('qrcode');
+                const att = document.createAttribute("hidden");
+                remove.setAttributeNode(att);
+
+                // CRIA NOVO ELEMENTO PARA POR NO LUGAR DO CANVAS
+                const h2 = document.getElementById('h2');
+                h2.textContent = 'Usuário Autenticado!';
+
+                // const button = document.getElementById('button');
+                // button.style.display = 'flex';
+                // button.textContent = 'Fechar Janela';
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,3 @@
+[0323/082809.719:INFO:CONSOLE(1)] "Another connection wants to delete database 'wawc_db_enc'. Closing db now to resume the delete request.", source: https://web.whatsapp.com/WAWebWorker.0599c1326c99de3c8fb7.worker.js (1)
+[0323/082809.720:INFO:CONSOLE(7)] "Another connection wants to delete database 'wawc_db_enc'. Closing db now to resume the delete request.", source: https://web.whatsapp.com/vendor1~app.0c8e960e5dfd7020f562.js (7)
+[0323/082816.241:INFO:CONSOLE(7)] "Another connection wants to delete database 'wawc'. Closing db now to resume the delete request.", source: https://web.whatsapp.com/vendor1~app.26ad649364c0cd2a0a46.js (7)

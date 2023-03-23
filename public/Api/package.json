@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "cjs": "^0.0.11",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.8",
+    "mysql2": "^2.3.3",
+    "node-fetch": "^3.2.9",
+    "qrcode-terminal": "^0.12.0",
+    "socket.io": "^4.5.1",
+    "socket.io-client": "^4.5.1",
+    "whatsapp-web.js": "^1.19.4",
+    "xpress": "^2.4.6"
+  }
+}
