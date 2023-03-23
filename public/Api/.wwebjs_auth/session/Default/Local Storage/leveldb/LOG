@@ -1,3 +1,5 @@
-2023/03/21-21:52:28.191 1834 Reusing MANIFEST C:\xampp\htdocs\wbot\public\Api\.wwebjs_auth\session\Default\Local Storage\leveldb/MANIFEST-000001
-2023/03/21-21:52:28.191 1834 Recovering log #4
-2023/03/21-21:52:28.192 1834 Reusing old log C:\xampp\htdocs\wbot\public\Api\.wwebjs_auth\session\Default\Local Storage\leveldb/000004.log 
+2023/03/23-15:21:29.277 43a0 Reusing MANIFEST C:\xampp\htdocs\chatzaping\public\Api\.wwebjs_auth\session\Default\Local Storage\leveldb/MANIFEST-000001
+2023/03/23-15:21:29.278 43a0 Recovering log #4
+2023/03/23-15:21:29.279 43a0 Level-0 table #6: started
+2023/03/23-15:21:29.287 43a0 Level-0 table #6: 13564 bytes OK
+2023/03/23-15:21:29.293 43a0 Delete type=0 #4

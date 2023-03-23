@@ -7,6 +7,9 @@
         padding: 10px;
         background: rgb(202, 255, 202);
     }
+    /* @media (min-width: 490px) {
+
+    } */
 </style>
 
 <div class="container mt-2">
@@ -17,7 +20,7 @@
     </div>
     @else
     <div class="row d-flex justify-content-center">
-        <div class="col-6">
+        <div class="col-sm-12 col-md-6">
             <h4 class="text-secondary text-center">Crie suas perguntas e respostas nos campos indicados. Utilize os
                 exemplos para se orientar.</h4>
             <h5 class="text-secondary text-center">Monte as perguntas e respostas com bastante cuidado, pois elas serão
@@ -26,15 +29,15 @@
         </div>
     </div>
     <div class="row d-flex justify-content-around">
-        <div class="col-6 bg-info">
+        <div class="col-sm-12 col-md-6 bg-info mt-1">
             @if (session('status'))
             <div class="alert alert-info">
                 {{ session('status') }}
             </div>
             @endif
-            exemplos
+           <p> exemplos</p>
         </div>
-        <div class="col-4" id="ground" style="min-height: 400px">
+        <div class="col-sm-12 col-md-4" id="ground" style="min-height: 400px">
             <form action="{{ route('salvarRespostas') }}" method="post">
                 @csrf
                 <div class="card bg-transparent">

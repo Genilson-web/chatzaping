@@ -6,19 +6,21 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    {{-- <title>{{ config('app.name', 'Laravel') }}</title> --}}
+    <meta property="og:image" content="http://atacadaopinto.ddns.net:8164/chatzaping/public/images/welcome/chatzaping.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:image:alt" content="ChatZaping" />
+    <meta property="og:url" content="http://atacadaopinto.ddns.net:8164/chatzaping/public/" />
+     <meta name="description"
+        content="Automação de mensagens utilizando o Whatsapp. Desonvolvido utilizando as ferramentas: Whatsapp-web.js, Node, Express.js, Socket.io, 
+        JavaScript, Laravel, mysql2, MySql entre outras.">
     <title>@yield('title', 'ChatZaping')</title>
-
-    <!-- Scripts -->
-    {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
 
     <!-- Fonts & Icons-->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <!-- Styles -->
-    {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .nav-item a {
@@ -66,15 +68,9 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-                        {{-- <li class="nav-item">
-                            <a class="nav-link" href="{{ route('message') }}">{{ __('Mensagem') }}</a>
-                        </li> --}}
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('home') }}">{{ __('Cadastrar Número') }}</a>
                         </li>
-                        {{-- <li class="nav-item">
-                            <a class="nav-link" href="{{ route('show') }}">{{ __('Show DB Values') }}</a>
-                        </li> --}}
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('setor') }}">{{ __('Cadastrar Setor') }}</a>
                         </li>
@@ -134,7 +130,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script> 
-    {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" defer></script> --}}
-
 </body>
 </html>

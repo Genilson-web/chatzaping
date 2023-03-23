@@ -28,8 +28,9 @@
     </div>
 </div>
 @else
-<div class="d-flex justify-content-center">
-    <h1 class="text-info">Ja existe numero cadastrado {{$numero}}</h1>
+<div>
+    <h1 class="text-info text-center">Ja existe numero cadastrado {{$numero}}</h1>
+    <h2 class="text-info text-center">Verifique se já existe Setores cadastrados.</h2>
 </div>
 @endif
 

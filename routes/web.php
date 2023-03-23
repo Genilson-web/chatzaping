@@ -20,12 +20,11 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
+Route::get('/comunicado',[MessageController::class,'comunicado'])->name('comunicado');
 Route::middleware([Bronze::class])->group(function () {
     // ROTAS PRINCIPAIS DO SISTEMA
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/message',[MessageController::class,'message'])->name('message');
-Route::get('/comunicado',[MessageController::class,'comunicado'])->name('comunicado');
 Route::get('/crawler',[MessageController::class,'crawler'])->name('crawler');
 // ROTA DE TESTE, REMOVER POSTERIORMENTE JUTO COM O METODO DO CONTROLLER
 Route::post('/crawlerr',[MessageController::class,'crawlerr'])->name('crawlerr');
@@ -48,5 +47,3 @@ Route::get('/mostrarAtendentes',[MessageController::class,'mostrarAtendentes'])-
 Route::get('/respostas',[MessageController::class,'respostas'])->name('respostas');
 Route::get('/mostrarRespostas',[MessageController::class,'mostrarRespostas'])->name('mostrarRespostas');
 });
-
-

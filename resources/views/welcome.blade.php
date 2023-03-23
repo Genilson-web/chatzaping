@@ -45,7 +45,6 @@
 
     .left {
         background-image: url("{{ asset('images/welcome/left.jpg') }}");
-        background-color: #8cb751;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
@@ -54,7 +53,6 @@
 
     .middle {
         background-image: url("{{ asset('images/welcome/middle.jpg') }}");
-        background-color: #8cb751;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
@@ -63,7 +61,6 @@
 
     .right {
         background-image: url("{{ asset('images/welcome/right.jpg') }}");
-        background-color: #8cb751;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
@@ -125,7 +122,6 @@
         #first-right {
             display: block;
             background-image: url("{{ asset('images/welcome/first-left.jpg') }}");
-            background-color: #8cb751;
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
@@ -165,7 +161,6 @@
         #second-right {
             display: block;
             background-image: url("{{ asset('images/welcome/sec-right.jpg') }}");
-            background-color: #8cb751;
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;

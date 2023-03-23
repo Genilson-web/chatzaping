@@ -31,10 +31,6 @@
         var socket = io();
 
         var canvas = document.getElementById('canvas');
-        // var dataURL = canvas.toDataURL();
-        // socket.on('falha', function (msg) {
-        //     console.log('falha = '+msg);
-        // });
 
         socket.on('event', function (msg) {
             console.log('qrcode = '+msg);
@@ -51,7 +47,7 @@
             var canvas = document.getElementById('qrcode').querySelector('canvas');
             var dataURL = canvas.toDataURL();
             const aguarde = document.getElementById('aguarde');
-            aguarde.textContent = 'Aguarde a Autenticação do Usuário!';
+            aguarde.textContent = 'Escaneie o QR Code e Aguarde a Autenticação do Usuário!';
 
         });
         // FUNÇÃO PARA ESCONDER O QRCODE APÓS USUÁRIO AUTENTICAR
@@ -65,9 +61,8 @@
                 const h2 = document.getElementById('h2');
                 h2.textContent = 'Usuário Autenticado!';
 
-                // const button = document.getElementById('button');
-                // button.style.display = 'flex';
-                // button.textContent = 'Fechar Janela';
+                const aguarde = document.getElementById('aguarde');
+                aguarde.style.display = 'none';
             }
         });
     </script>
