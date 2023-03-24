@@ -160,7 +160,7 @@
 
         #second-right {
             display: block;
-            background-image: url("{{ asset('images/welcome/sec-right.jpg') }}");
+            background-image: url("{{ asset('images/welcome/second-right.jpg') }}");
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
