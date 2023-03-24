@@ -17,7 +17,7 @@ ChatZaping:
 
 Aqui você disserta sobre a arquitetura que você usou no projeto, que vai desde um desenho que represente a arquitetura usada, como o exemplo abaixo, até mesmo os padrões de projeto que você usou.
 
-![Curto.io Example Architecture](./public/images/arquitetura.jpg)
+![Curto.io Example Architecture](./images/arquitetura.jpg)
 
 **Laravel**
 
@@ -49,7 +49,7 @@ client.on('message', message => {
 	}
 });
   ```
-  ![Curto.io Example Architecture](./public/images/whatsapp.png)
+  ![Curto.io Example Architecture](./images/whatsapp.png)
 
 *O código acima mostra uma resposta programada da biblioteca onde o usuário enviou uma mensagem contendo o texto '!ping' e recebe uma mensagem de volta com o texto 'pong'.*
 
@@ -65,7 +65,7 @@ client.on('message', message => {
 
 ## Fluxo do Cliente
 
-![Feature 1](./public/images/features.jpg)
+![Feature 1](./images/features.jpg)
 
 ## Instruções de utilização
 
