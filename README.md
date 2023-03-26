@@ -67,4 +67,14 @@ client.on('message', message => {
 
 ## Instruções de utilização
 
-Em produção
+*Instruções em produção...*
+
+## Observação
+
+*Caso queira clonar (baixar) o código fonte desse sistma e utilizar em seu projeto pessoal, será preciso instalar (via npm ou yarn) todas as bibliotecas citadas acima.*
+
+*Estas bibliotecas necessitam de um espaço em disco de, pelo menos, 400 MB. O que ficaria inviável armazenar aqui no repositório.*
+
+*Devido a essa questão de espaço, a pasta onde são instaladas as bibliotecas, foi excluida do repositório (node_modules), dentro do diretório public/Api.*
+
+*Sendo assim, basta instalar as bibliotecas citadas dentro do diretório public/Api que o sistema funcionara normalmente.*
